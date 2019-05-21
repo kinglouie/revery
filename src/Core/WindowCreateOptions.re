@@ -53,6 +53,7 @@ let create =
       ~backgroundColor=Colors.cornflowerBlue,
       ~vsync=true,
       ~icon=None,
+      ~transparentFrameBuffer=false,
       (),
     ) => {
   resizable,
@@ -64,6 +65,7 @@ let create =
   backgroundColor,
   vsync,
   icon,
+  transparentFrameBuffer,
 };
 
 let default = create();

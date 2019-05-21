@@ -153,6 +153,7 @@ let create = (name: string, options: WindowCreateOptions.t) => {
   Glfw.glfwWindowHint(GLFW_VISIBLE, options.visible);
   Glfw.glfwWindowHint(GLFW_MAXIMIZED, options.maximized);
   Glfw.glfwWindowHint(GLFW_DECORATED, options.decorated);
+  Glfw.glfwWindowHint(GLFW_DECORATED, options.transparentFrameBuffer);
 
   switch (options.vsync) {
   | false => Glfw.glfwSwapInterval(0)
